@@ -1,6 +1,6 @@
 body {
     font-family: 'Baloo Thambi', cursive;
-    margin: 0 0;
+    margin: 0 0 0 0;
     font-size: 16px;
     background: white;
     line-height: 1;
@@ -9,16 +9,16 @@ h1 {
     font-size: 1.25rem;
 }
 .container {
-    width: 100vw;
-    height: 100vh;
     background-color: aqua;
+    width: auto;
+    height: 100vh;
 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 .main1 {
-    width: 100vw;
+    width: auto;
     height: 55vh;
     background-image: url('img0.jpg');
     background-size: 200%;
@@ -36,11 +36,11 @@ h1 {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 .main2 {
-    width: 100vw;
+    width: auto;
     height: 45vh;
     /*background-image: linear-gradient(100deg, #fdfbfb 0%, #ebedee 100%);*/
     background-color: blue;
@@ -57,14 +57,14 @@ h1 {
  .box2 {
     background-color: red;
     grid-column: 1 / 2;
-    grid-row: 8 / 9;
+    grid-row: 5 / 6;
     opacity: 0.5;
 
  }
 
-@media (min-width: 699px) {
+@media (min-width: 600px) {
     .container {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         background-color: aqua;
         display: grid;
@@ -74,7 +74,7 @@ h1 {
 
     .main1 {
         width: 45vw;
-        height: 100vh;
+        height: auto;
         background-image: url('img0.jpg');
         background-size: 200%;
         background-position: center center;
@@ -91,7 +91,7 @@ h1 {
     
     .main2 {
         width: 55vw;
-        height: 100vh;
+        height: auto;
         /*background-image: linear-gradient(100deg, #fdfbfb 0%, #ebedee 100%);*/
         background-color: blue;
         grid-column: 2 / 3;
